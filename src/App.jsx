@@ -1,5 +1,6 @@
 import { SpecialOffer, CustomerReviews, Footer, Hero, PopularProducts, Services, Subscribe, SuperQuality } from './sections';
 import Nav from './components/Nav';
+import ShoeCard from './components/ShoeCard';
 
 const App = () => {
   return(
