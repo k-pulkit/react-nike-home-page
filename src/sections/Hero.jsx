@@ -44,7 +44,7 @@ const Hero = () => {
 
            <div className="w-5/2 justify-around items-center flex absolute -bottom-12 gap-10">
               {shoes.map((shoe, index) => (
-                <ShoeCard heroShoe={heroShoe} shoe={shoe} />
+                <ShoeCard heroShoe={heroShoe} shoe={shoe} handlerChangeShoe={(s) => setHeroShoe(s.bigShoe)} />
               ))}
            </div>
       </div>
