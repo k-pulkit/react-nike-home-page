@@ -11,7 +11,7 @@ const PopularProducts = () => {
           <span className="text-coral-red">Popular </span>
           <span>Products</span>
         </h2>
-        <p className="text-lg text-slate-gray font-montserrat lg:max-w-lg">Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value</p>
+        <p className="text-lg text-slate-gray font-montserrat lg:max-w-lg"> Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value</p>
         <div className="mt-10 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 max-md:gap-12">
           { products.map((product, index) => (
             <div key={index}>
