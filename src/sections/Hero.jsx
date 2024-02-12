@@ -20,15 +20,15 @@ const Hero = () => {
           <span className="text-coral-red mt-3 inline-block">Nike</span>
           <span> Shoes</span>
         </h1>
-        <p className="font-montserrat text-slate-gray mt-6 mb-14 leading-8 text-lg">Discover stylish Nike collection, innovation for your active life.</p>
+        <p className="font-montserrat text-slate-gray mt-6 mb-14 leading-8 text-lg lg:max-w-sm">Discover stylish Nike arrivals, quality comfort, and innovation for your active life.</p>
         {/* Button component */}
         <Button label="Shop now" iconurl={arrowRight} />
         {/* Stats section */}
         <section className="w-full mt-20 flex flex-wrap justify-start items-start gap-16">
           { statistics.map((stat, index) => (
               <div key={index}>
-                <p className="text-4xl font-bold font-montserrat">{stat.value}</p>
-                <p className="text-xl font-palanquin text-slate-gray leading-8">{stat.label}</p>
+                <p className="text-4xl font-semibold font-palanquin">{stat.value}</p>
+                <p className="text-md font-montserrat text-slate-gray leading-8 font-normal">{stat.label}</p>
               </div>
           )) }
         </section>
@@ -44,7 +44,9 @@ const Hero = () => {
 
            <div className="w-5/2 justify-around items-center flex absolute -bottom-12 gap-10">
               {shoes.map((shoe, index) => (
-                <ShoeCard heroShoe={heroShoe} shoe={shoe} handlerChangeShoe={(s) => setHeroShoe(s.bigShoe)} />
+                <div key={index}>
+                  <ShoeCard heroShoe={heroShoe} shoe={shoe} handlerChangeShoe={(s) => setHeroShoe(s.bigShoe)} />
+                </div>
               ))}
            </div>
       </div>
