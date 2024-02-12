@@ -5,7 +5,7 @@ import ShoeCard from './components/ShoeCard';
 const App = () => {
   return(
     <main className="relative">
-        <div className="w-full text-center sticky -top-0 p-2 bg-black text-coral-red font-light text-lg font-palanquin z-20">
+        <div className="w-full text-center sticky -top-0 p-2 bg-black text-coral-red font-light text-lg max-sm:text-sm max-xl:text-left font-palanquin z-20">
           <p>
           Disclaimer: This website is a personal project and not affiliated with Nike Inc. All trademarks, logos, and brand names are property of their respective owners.
           </p>
